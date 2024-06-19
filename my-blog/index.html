@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Blog</title>
+        <link rel="stylesheet"href="./assets/css/styles.css">
+        <link rel="stylesheet"href="./assets/css/form.css">
+
+        </head>
+        <body>
+            <header>
+                <nav>
+                    <div class="logo">
+                      <a href="#" class="Personal-Blog-link" >Personal Blog</a>
+                    </div>
+                    <div class="nav-links">
+                      <a href="#">Home</a>
+                      <a href="blog.html">Blog Posts</a>
+                      <a href="#">About</a>
+                    </div>
+                  </nav>
+            </header>
+
+            <main>
+                <h1>Welcome to My-Personal Blog</h1>
+                <form id="blog-form">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" title="Enter your username" placeholder="Username" required autocomplete="username">
+
+                    <label for="blogTitle">Blog Title</label>
+                    <input type="text" id="blogTitle" name="blogTitle" title="Enter the title of your blog" placeholder="Blog Title" required autocomplete="on">
+
+                    <label for="blogContent">Blog Content:</label>
+                    <textarea id="blogContent" name="blogContent" title="Enter the content of your blog" placeholder="Blog Content" required autocomplete="on"></textarea>
+                    <button type="submit">Submit</button>
+
+                <div class="theme-Toggle">
+                    <button type="button" id="darkModeToggle">Dark Mode</button>
+                </div>
+
+                </form>
+            </main>
+
+            <script src="./assets/js/logic.js"></script>
+            <script src="./assets/js/form.js"></script>
+
+        </body>
+</html>
