@@ -1,24 +1,3 @@
-/*document.addEventListener('DOMContentLoaded', function() {
-  const darkModeToggle = document.getElementById('darkModeToggle');
-  const body = document.body;
-
-  if (darkModeToggle) {
-    darkModeToggle.addEventListener('click', () => {
-      body.classList.toggle('dark-mode');
-      darkModeToggle.textContent = body.classList.contains('dark-mode') ? 'Light Mode' : 'Dark Mode';
-    });
-  }
-
-  const themeToggleButton = document.querySelector('.theme-toggle button');
-  const backLink = document.getElementById('backLink');
-  
-  if (themeToggleButton && backLink) {
-    themeToggleButton.addEventListener('click', function() {
-      backLink.classList.toggle('dark-mode');
-    });
-  }
-});*/
-
 document.addEventListener('DOMContentLoaded', () => {
   const darkModeToggle = document.getElementById('darkModeToggle');
   const body = document.body;
@@ -41,13 +20,12 @@ document.addEventListener('DOMContentLoaded', () => {
       });
   }
 
-  const backButton = document.getElementById('backBtn'); // Use correct ID
+  const backButton = document.getElementById('backBtn'); 
   if (backButton) {
       backButton.addEventListener('click', () => {
           window.location.href = 'index.html';
       });
   }
-
   function updateButtonText() {
       darkModeToggle.textContent = body.classList.contains('dark-mode') ? 'Light Mode' : 'Dark Mode';
   }

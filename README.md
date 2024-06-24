@@ -7,10 +7,6 @@ This is a simple personal blog web application built with HTML, CSS, and JavaScr
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
-- [Usage] (#usage)
-- [File Structure] (#file-structure)
-- [Contributing] (#contributing)
-- [License] (#license)
 
 ## Features
 
@@ -34,3 +30,5 @@ This is a simple personal blog web application built with HTML, CSS, and JavaScr
 
 ```bash
 git clone [https://github.com/your-username/your-repository.git](https://github.com/Daniel639/my-blog)
+
+<img src="./my-blog/assets/Screenshot 2024-06-24 at 1.11.53 PM.png" alt="screenshot1"/>
