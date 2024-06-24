@@ -4,46 +4,57 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My Blog</title>
-        <link rel="stylesheet"href="./assets/css/styles.css">
-        <link rel="stylesheet"href="./assets/css/form.css">
+        <link rel="stylesheet" href="./assets/css/styles.css">
+        <link rel="stylesheet" href="./assets/css/form.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
 
-        </head>
-        <body>
-            <header>
-                <nav>
-                    <div class="logo">
-                      <a href="#" class="Personal-Blog-link" >Personal Blog</a>
-                    </div>
-                    <div class="nav-links">
-                      <a href="#">Home</a>
-                      <a href="blog.html">Blog Posts</a>
-                      <a href="#">About</a>
-                    </div>
-                  </nav>
-            </header>
-
-            <main>
-                <h1>Welcome to My-Personal Blog</h1>
-                <form id="blog-form">
-                    <label for="username">Username</label>
-                    <input type="text" id="username" name="username" title="Enter your username" placeholder="Username" required autocomplete="username">
-
-                    <label for="blogTitle">Blog Title</label>
-                    <input type="text" id="blogTitle" name="blogTitle" title="Enter the title of your blog" placeholder="Blog Title" required autocomplete="on">
-
-                    <label for="blogContent">Blog Content:</label>
-                    <textarea id="blogContent" name="blogContent" title="Enter the content of your blog" placeholder="Blog Content" required autocomplete="on"></textarea>
-                    <button type="submit">Submit</button>
-
-                <div class="theme-Toggle">
-                    <button type="button" id="darkModeToggle">Dark Mode</button>
+    </head>
+    <body>
+        <header>
+            <nav>
+    
+                <div class="nav-links">
+                    <a href="https://github.com/daniel639">Portfolio</a>
+                    <a href="blog.html">Blog Posts</a>
+                    <a href="mailto:berroadanny@gmail.com">Contact Me</a>
                 </div>
+            </nav>
+        </header>
 
-                </form>
-            </main>
+        <main>
+            <form id="blogform">
 
-            <script src="./assets/js/logic.js"></script>
-            <script src="./assets/js/form.js"></script>
+                <h1>What's on Your Mind?</h1>
+            
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" title="Enter your username" placeholder="Username" required autocomplete="username">
+                <label for="blogTitle">Blog Title</label>
+                <input type="text" id="blogTitle" name="blogTitle" title="Enter the title of your blog" placeholder="Blog Title" required autocomplete="on">
+                <label for="blogContent">Blog Content:</label>
+                <textarea id="blogContent" name="blogContent" title="Enter the content of your blog" placeholder="Blog Content" required></textarea>
+                <button type="submit">Submit</button>
 
+            </form>
+
+            <button id="darkModeToggle" type="button">Dark Mode</button>
+        </main>
+        
+        <footer class="footer">
+            <div class="footer-content">
+                <ul class="footer-links">
+                    
+                    </ul>
+                <div class="social-media">
+                    <a href="https://github.com/daniel639" target="_blank" aria-label="GitHub" rel="noopener"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/berroajr" target="_blank" aria-label="Instagram" rel="noopener"><i class="fab fa-instagram"></i></a>
+                    <a href="mailto:berroadanny@gmail.com" aria-label="Gmail"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <p class="madeby">&copy; 2024 Made By Daniel Berroa | All Rights Reserved</p>
+        </footer>
         </body>
+    </html>
+        <script src="./assets/js/logic.js"></script>
+        <script src="./assets/js/form.js"></script>
+    </body>
 </html>

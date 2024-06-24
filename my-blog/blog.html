@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Blog</title>
+    <title>My First Blog - Posts</title>
     <link rel="stylesheet" href="./assets/css/blog.css">
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+
 </head>
 <body>
     <header>
@@ -13,20 +14,47 @@
             <div class="back-link">
                 <a href="index.html" id="backBtn">Back to Home</a>
             </div>
-            <h1>My Blog</h1>
+           
         </nav>
     </header>
+    <h1>My First Blog</h1>
 
     <div class="theme-toggle">
         <button type="button" id="darkModeToggle">Dark Mode</button>
     </div>
 
-    <div class="content">
-        <div class="blog-posts">
-            <!-- Add your blog posts here -->
-        </div>
-    </div>
+    <main class="blog-container">
+        <form id="myform">
 
+        </form>
+        <main id="blogPost">
+            <article class="blog-post">
+                <h2>First Blog Post</h2>
+                <p class="post-meta">Posted by: <span class="author">Username</span> on <time datetime="2024-06-20">June 20, 2024</time></p>
+                <p>This is the content of the first blog post. It can be multiple paragraphs long.</p>
+                <p>You can add more paragraphs as needed.</p>
+            </article>
+        
+            <article class="blog-post">
+                <h2>Second Blog Post</h2>
+                <p class="post-meta">Posted by: <span class="author">Another User</span> on <time datetime="2024-06-21">June 21, 2024</time></p>
+                <p>This is the content of the second blog post. It demonstrates how multiple posts would appear.</p>
+            </article>
+        </main>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <ul class="footer-links">
+                
+                </ul>
+            <div class="social-media">
+                <a href="https://github.com/daniel639" target="_blank" aria-label="GitHub" rel="noopener"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/berroajr" target="_blank" aria-label="Instagram" rel="noopener"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:berroadanny@gmail.com" aria-label="Gmail"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <p class="madeby">&copy; 2024 Made By Daniel Berroa | All Rights Reserved</p>
+    </footer>
     <script src="./assets/js/blog.js"></script>
     <script src="./assets/js/logic.js"></script>
 </body>

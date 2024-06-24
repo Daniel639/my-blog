@@ -1,60 +1,234 @@
-body {
+ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    padding: 20px;
-    background-color: #fff;
-}
-
-nav {
+    padding: 0;
+    background-color: #f0f0f0;
     color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    position: relative;
+  }
+  
+  header {
+    background-color: purple;
+    padding: 0px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+
+  main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  
+  }
+  
+  h1 {
+    text-align: center;
+    color: black;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+  }
+  
+  input, textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #666;
 }
 
-#backBtn {
+  #backBtn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
+    background-color: black;
+    color: #fff;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 #backBtn:hover {
+    background-color: #666;
+}
+
+  button:hover {
     background-color: #45a049;
-}
-
-h1 {
-    text-align: center;
-    color: #333;
-}
-
-.dark-mode {
-    background-color: #333;
-    color: #fff;
-}
-
-
-.theme-toggle {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-}
-
-.theme-toggle button {
-    display: inline-block;
-    padding: 12px 30px;
-    background-color: #4CAF50;
+  }
+  
+  #darkModeToggle {
+    position:fixed;
+    top: 15px;
+    right: 20px;
+    background-color: black;
+    padding: 10px 20px; 
+    cursor: pointer;
     color: white;
-    text-decoration: none;
-    border-radius: 5px;
+    border:none;
+    border-radius: 4px;
     transition: background-color 0.3s ease;
-}
-
-.theme-toggle button:hover, .black-link a:hover {
-    background-color: #45a049;
-}
-
-#backLink.light-mode {
+    z-index: 1000;
+  }
+  
+  #darkModeToggle:hover {
+    background-color: #666;
+  }
+  .dark-mode {
     background-color: #333;
     color: #fff;
+  }
+  
+  .dark-mode main {
+    background-color: #444;
+    box-shadow: 0 0 10px rgba(255,255,255,0.1);
+  }
+  
+  .dark-mode h1 {
+    color: #f0f0f0;
+  }
+  
+  .dark-mode label {
+    color: #f0f0f0;
+  }
+  
+  .dark-mode input, .dark-mode textarea {
+    background-color: #555;
+    color: #f0f0f0;
+    border-color: #666;
+  }
+  
+  .dark-mode button {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  .dark-mode button:hover {
+    background-color: #ddd;
+  }
+  
+  .dark-mode #darkModeToggle {
+    background-color: #f0f0f0;
+    color: black;
+  } 
+
+.blog-post {
+  background-color: #fff; 
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  transition: background-color 0.3s ease; 
 }
+
+.blog-post h2 {
+  margin-bottom: 5px; 
+}
+
+.blog-post .post-meta {
+  font-size: 0.9em;
+  color: #777; 
+  margin-bottom: 10px;
+}
+
+body.dark-mode .blog-post {
+  background-color: #444; 
+  color: #f0f0f0; 
+}
+
+body.dark-mode .blog-post .post-meta {
+  color: #bbb; 
+} 
+/* ... (Your existing style.css code) ... */
+
+/* Footer Styles */
+.footer {
+  background-color: purple; /* Darker blue */
+  color: white;
+  padding: 30px 0; /* Increased padding for more space */
+  text-align: center; /* Center content */
+}
+
+.footer-content {
+  display: flex; /* Arrange content horizontally */
+  justify-content: space-around; /* Evenly space items */
+  align-items: center; /* Vertically center items */
+  margin-bottom: 20px; 
+  flex-direction: column;
+}
+
+.footer-links {
+  list-style: none; /* Remove default list styling */
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.footer-links li {
+  margin: 0 15px; /* Add spacing between links */
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold; /* Make links bold */
+}
+
+.social-media a {
+  color: white;
+  margin: 0 10px; 
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+  color: #007bff; /* Blue hover effect */
+}
+
+.copyright {
+  font-size: 0.9em; /* Slightly smaller copyright text */
+  color: #888;      /* Lighter gray for copyright text */
+}
+
+/* Wave Effect for Footer (Optional) */
+.footer:before { 
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'><path d='M0,0 C300,100 900,40 1200,0 L1200,120 L0,120 Z' fill='%23007bff'/></svg>"); /* Blue wave */
+  z-index: -1; /* Place behind footer content */
+}
+
+
