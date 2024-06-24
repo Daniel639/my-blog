@@ -29,6 +29,4 @@ This is a simple personal blog web application built with HTML, CSS, and JavaScr
 1. Clone the repository:
 
 ```bash
-git clone [https://github.com/your-username/your-repository.git](https://github.com/Daniel639/my-blog)
-
-<img src="./my-blog/assets/Screenshot 2024-06-24 at 1.11.53 PM.png" alt="screenshot1"/>
+git clone (https://github.com/Daniel639/my-blog)
